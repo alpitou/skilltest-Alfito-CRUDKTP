@@ -1,0 +1,16 @@
+[32mInstalling dependencies from lock file (including require-dev)[39m
+[32mVerifying lock file contents can be installed on current platform.[39m
+[37;41mYour lock file does not contain a compatible set of packages. Please run composer update.[39;49m
+
+  Problem 1
+    - phpoffice/phpspreadsheet is locked to version 1.29.0 and an update of this package was not requested.
+    - phpoffice/phpspreadsheet 1.29.0 requires ext-zip * -> it is missing from your system. Install or enable PHP's zip extension.
+  Problem 2
+    - maatwebsite/excel is locked to version 3.1.52 and an update of this package was not requested.
+    - maatwebsite/excel 3.1.52 requires phpoffice/phpspreadsheet ^1.18 -> satisfiable by phpoffice/phpspreadsheet[1.29.0].
+    - phpoffice/phpspreadsheet 1.29.0 requires ext-zip * -> it is missing from your system. Install or enable PHP's zip extension.
+
+To enable extensions, verify that they are enabled in your .ini files:
+    - D:\xampp\php\php.ini
+You can also run `php --ini` in a terminal to see which files are used by PHP in CLI mode.
+Alternatively, you can run Composer with `--ignore-platform-req=ext-zip` to temporarily ignore these required extensions.

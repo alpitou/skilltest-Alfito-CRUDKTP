@@ -1,0 +1,42 @@
+@extends('./layouts/main')
+@section('view')
+    @include('./partials/navbar')
+    <div class="container py-4">
+        <div class="card rounded-4 p-3">
+            @if ($errors->any())
+                <div class="alert my-alert p-2" role="alert">
+                    @foreach ($errors->all() as $error)
+                        <small>{{ $error }}</small><br>
+                    @endforeach
+                </div>
+            @endif
+            <div class="card-body">
+                <div class="my-card-header">
+                <h3 id="aktivitas-user-title" class="text-link">AKTIVITAS USER</h3>
+                    <div class="table-responsive">
+                        <table class="table mt-3 table-transparent">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Username</th>
+                                    <th scope="col">Aktivitas</th>
+                                    <th scope="col">Waktu</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($data as $item)
+                                <tr>
+                                    <td>{{ $item->user->username }}</td>
+                                    <td>{{ $item->activity }}</td>
+                                    <td>{{ date_format($item->created_at, "Y-m-d H:i:s") }}</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @include('./partials/footer')
+@endsection
+            

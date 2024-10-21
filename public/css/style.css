@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+    font-family: "Nunito", sans-serif;
+    background-color: #FF1493;
+    min-height: 100vh;
+    display: flex;
+  flex-direction: column;
+
+}
+.login-container{
+    min-height: 100vh;
+    background-image: linear-gradient(30deg, #91C8E4, #4682A9);
+}
+
+.col-form-label {
+    font-weight: bold;
+}
+
+.search-input {
+    border: 1px solid black; 
+    border-right: 0.5 solid black; 
+    border-radius: 50px 0 0 50px; 
+    color: #b58db6; 
+}
+
+.card-body {
+    background-color: #ffffff; 
+    border: 1.2px solid #ffccd5; 
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card-body:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#data-ktp-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+#tambah-data-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+#aktivitas-user-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+#import-data-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+#data-ktp-title::before {
+    content: "\f2c2"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #000;
+}
+
+.search-btn {
+    background-color: pink;
+    border: 0.5px solid black; 
+    border-left: 0.5 solid black; 
+    border-radius: 0 50px 50px 0; 
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+}
+
+.search-icon {
+    color: white; 
+}
+
+.data-ktp-title {
+    font-size: 7rem; 
+    font-weight: bold; 
+    font-family: 'Poppins', sans-serif;
+    color: #333 !important; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    padding-bottom: 2px; 
+    margin-right: auto; 
+}
+
+.login-info {
+    font-size: 1.3rem; 
+    font-family: 'Poppins', sans-serif;
+    color: #333; 
+    margin-top: 2px; 
+}
+
+.text-link {
+    color: 333 !important; 
+    font-weight: bold; 
+}
+
+.search-btn {
+    background-color: pink;
+    border: 0.5px solid black;
+    border-left: 0.5px solid black;
+    border-radius: 0 50px 50px 0;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: #ff99cc;
+    color: white;
+}
+
+input.form-control::placeholder {
+    color: #b58db6; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.navbar {
+    background-color: #000;
+    font-family: 'Poppins', sans-serif; 
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: #ff007b !important;
+}
+
+.active-link {
+    color: #ff007b !important;
+    font-weight: 600;
+    border-bottom: 2px solid #ff007b !important; 
+    padding-bottom: 5px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #ff007b;
+    border-radius: 3px;
+}
+
+.my-btn {
+    background-color: #ff007b !important;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.my-btn:hover {
+    background-color: #e6006c;
+}
+
+@media (max-width: 992px) {
+    .nav-link {
+        font-size: 0.9rem;
+    }
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+}
+
+/* navbar */
+.nav-link{
+    color: #EEEEEE;
+}
+.nav-link:hover{
+    color: #FFFFFF !important;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+/* end navbar */
+
+/* table */
+.table-transparent, .table-transparent th, .table-transparent td{
+    background-color: transparent;
+}
+.export-section .btn{
+    width: auto;
+}
+.resident-picture{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+.my-custom-pagination-style nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.my-custom-pagination-style nav ul li {
+    margin: 0 5px;
+}
+
+.my-custom-pagination-style nav ul li a,
+.my-custom-pagination-style nav ul li span {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #ddd; /* Default border color */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none;
+    color: #444; /* Default text color */
+    background-color: #f8f8f8; /* Default background */
+    position: relative;
+    transition: all 0.3s;
+}
+
+.my-custom-pagination-style nav ul li.active span {
+    border: 1px solid #d63384; /* Ungu border untuk item aktif */
+    color: #d63384; /* Ungu untuk teks pada item aktif */
+    background-color: transparent; /* Tidak ada background untuk item aktif */
+}
+
+.my-custom-pagination-style nav ul li.active span:before, 
+.my-custom-pagination-style nav ul li.active span:after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #d63384;
+    border-radius: 50%;
+}
+
+.my-custom-pagination-style nav ul li.active span:before {
+    top: -5px;
+    left: -5px;
+}
+
+.my-custom-pagination-style nav ul li.active span:after {
+    bottom: -5px;
+    right: -5px;
+}
+
+.my-custom-pagination-style nav ul li a:hover {
+    background-color: #eee; /* Hover effect */
+    border-color: #ddd;
+    color: #444;
+}
+
+.my-custom-pagination-style nav ul li.disabled span {
+    color: #999;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.my-custom-pagination-style nav ul li a[rel="prev"],
+.my-custom-pagination-style nav ul li a[rel="next"] {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+/* end table */
+
+/* button */
+.my-btn{
+    border: none;
+    background-color: #749BC2;
+    color: #EEEEEE;
+}
+.my-btn:hover{
+    background-color: #4682A9;
+    color: #EEEEEE;
+}
+.my-btn:active{
+    background-color: #749BC2 !important;
+    color: #EEEEEE !important;
+}
+.my-btn2{
+    border: none;
+    background-color: #E1E1E1;
+    color: #4682A9;
+}
+.my-btn2:hover{
+    background-color: #DDDDDD;
+    color: #EEEEEE;
+}
+.my-btn2:active{
+    background-color: #E1E1E1 !important;
+    color: #4682A9 !important;
+}
+.my-btn-red{
+    border: none;
+    background-color: #FF6868;
+    color: #EEEEEE;
+}
+.my-btn-red:hover{
+    background-color: #DDDDDD;
+    color: #EEEEEE;
+}
+.my-btn-red:active{
+    background-color: #FF6868 !important;
+    color: #EEEEEE !important;
+}
+/* end button */
+
+/* text & background */
+.active-link{
+    color: #FFFFFF !important;
+    border-bottom: 2px solid #749BC2;
+}
+.text-link{
+    color: #4682A9;
+}
+.my-bg-yellow{
+    background-color: #F4D160;
+}
+.my-bg-blue{
+    background-color: #91C8E4;
+}
+.my-bg-darkblue{
+    background-color: #4682A9;
+}
+.my-alert{
+    background-color: #EEEEEE;
+    color: #FF6868;
+}
+/* end text & background */
